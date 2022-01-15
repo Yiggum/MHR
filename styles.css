@@ -1,0 +1,37 @@
+#form {
+    display: grid;
+    font-family: "calibri";
+    width: 280px;
+    height: 175px;
+    border-radius: 20px;
+    background-color: rgb(137,200,46);
+    border-style: solid;
+    border-color: rgb(60,60,59);
+    align-items: center;
+    margin:auto;
+    
+    
+}
+
+ .labels {
+    padding: 5px;
+    font-family: "calibri";
+    display: inline-grid;
+    width: 45px;
+    text-align: left;
+    padding-left: 25px;
+       
+}
+
+.btn {
+    display:inline-block;
+    margin-left: 110px;
+    margin-top: 5px;
+    background-color: rgb(231,0,100);
+    align-self: center;
+    border-radius: 4px;
+} 
+
+.grid1 {
+    margin-top: 20px    
+}

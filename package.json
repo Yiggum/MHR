@@ -1,0 +1,23 @@
+{
+  "name": "appendix-a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "email-validator": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yiggum/MHR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yiggum/MHR/issues"
+  },
+  "homepage": "https://github.com/Yiggum/MHR#readme"
+}
