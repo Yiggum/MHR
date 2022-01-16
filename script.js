@@ -2,48 +2,44 @@ const firstName = document.getElementById("firstName");
 const emailAdress = document.getElementById("email");
 const cardNumEntered = document.getElementById("cardDetails")
 
+
 function validatorCaller() {
- var a = a
-if(validateFormName(firstName) && 
-validateFormEmail(emailAdress) &&
-validateFormCard()) {
+if(validateFormName(firstName) && validateFormEmail(emailAdress) && validateFormCard()) {
     return true;
 } else {
-  return false;
+    return false;
 }
 }
 
 
-function validateFormName()
-  {
-  // var firstName = document.getElementById("firstName");
+function validateFormName()  {
+  var firstName = document.getElementById("firstName");
    var letters = /^[A-Za-z]+$/;
 
-   if(!firstName.value.match(letters))
-     {
+   if(!firstName.value.match(letters)) {      
+       firstName.style.backgroundColor = "rgb(231,0,100)";
        alert("Please enter a valid name");
-      return false;
-      
-     }
-     
-   else {
-     
+       return false;
+      }     
+   else {    
+    firstName.style.backgroundColor = "rgb(137,200,46)"; 
      return true;
    }
   }
 
 
-function validateFormEmail()
-{
+function validateFormEmail() {
  
   var regex =   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   
-   if(!emailAdress.value.match(regex))
-     {
-       alert("Please enter a valid email address");
+   if(!emailAdress.value.match(regex)) {
+     
+      emailAdress.style.backgroundColor = "rgb(231,0,100)";
+       alert("Please enter a valid email address");       
       return false;
      }     
    else {
+    emailAdress.style.backgroundColor = "rgb(137,200,46)"; 
      return true;
    }
 }
@@ -79,8 +75,11 @@ function luhnValidator(value) {
 function validateFormCard() {
   
   if (luhnValidator(cardNumEntered.value)) {
+    cardNumEntered.style.backgroundColor = "rgb(137,200,46)"; 
+    alert("Form submitted")
     return true;
-  } else {
+  } else {    
+  cardNumEntered.style.backgroundColor = "rgb(231,0,100)";
     alert("Please enter a valid Credit card number")
     return false;
   }

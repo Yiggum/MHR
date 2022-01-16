@@ -14,12 +14,12 @@
 
 <body>
 
-    <form id="form" onsubmit="return validatorCaller()" action="message.html">
+    <form id="form" autocomplete="off" onsubmit="return validatorCaller()" >
 
         <div>
 
-            <label class="labels" class="topLabel" for="firstName">Name:</label>
-            <input class="grid1"  type="text" id="firstName" name="firstName" placeholder="Enter Your Name">
+            <label class="labels"  class="topLabel" for="firstName">Name:</label>
+            <input class="grid1"   type="text" id="firstName" name="firstName" placeholder="Enter Your Name" >
 
         </div>
 
@@ -35,15 +35,14 @@
         <div>
 
             <label class="labels" class="bottomLabel" for="cardDetails">Card:</label>
-            <input class="grid"  type="text" id="cardDetails" name="cardDetails"
-                placeholder="Enter Your Credit Card">
+            <input class="grid"  type="text" id="cardDetails" name="cardDetails" placeholder="Enter Your Credit Card">
 
         </div>
 
 
         <div>
             <!-- <button id="submitButton" value="submit" type="submit">submit</button> -->
-            <input id="submitButton" type="submit" class = "btn" value="Submit">
+            <input id="submitButton" type="submit" alt="Submit button" class = "btn" value="Submit">
             <!-- <button class="btn">Submit</button> -->
             
         </div>
