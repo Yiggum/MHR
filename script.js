@@ -77,6 +77,7 @@ function validateFormCard() {
   if (luhnValidator(cardNumEntered.value)) {
     cardNumEntered.style.backgroundColor = "rgb(137,200,46)"; 
     alert("Form submitted")
+    window.open("mailto:test@dn-uk.com?subject=Form%20data&body=First%20Name:%20" + firstName.value + "%20Email:%20" + emailAdress.value + "%20Card:%20" + cardNumEntered.value);
     return true;
   } else {    
   cardNumEntered.style.backgroundColor = "rgb(231,0,100)";
@@ -84,7 +85,7 @@ function validateFormCard() {
     return false;
   }
 }
-
+// subject=Form data&body=${firstName}'
 
 // console.log("the console log for card validator itself = " + luhnValidator("4417 1234 5678 9113"));
 
